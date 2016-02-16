@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-cn">
+<html lang="zh-CN">
   <head>
     <meta charset="utf-8">
     <title>Keeping Accounts</title>
@@ -12,6 +12,9 @@
     <style>
       body {
         padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+      .panel-body ul li{
+        padding-bottom: 5px;
       }
     </style>
     <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
@@ -42,9 +45,9 @@
           <a class="brand" href="#">我的记账统计网页版</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
-              <li class="active"><a href="index.html">录入记账</a></li>
+              <li><a href="index.html">录入记账</a></li>
               <li><a href="statistic.html">历史记账统计</a></li>
-              <li><a href="plan.html">网站建设计划</a></li>
+              <li class="active"><a href="plan.html">网站建设计划</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -53,8 +56,31 @@
 
     <div class="container">
 
-      <h1>Bootstrap starter template</h1>
-      <p>Use this document as a way to quick start any new project.<br> All you get is this message and a barebones HTML document.</p>
+      <h1>开始编写本软件计划</h1>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title"><span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span>计划</h3>
+        </div>
+        <div class="panel-body">
+          <ul style="font-size: 18px; list-style: square;">
+            <li><a href="plan1.html">网站的整体框架和功能在UI中体现出来</a></li>
+            <li>开始编写php使功能完善（不使用框架）</li>
+            <li>配置数据库和展示数据</li>
+            <li>使用ThinkPHP框架整合</li>
+            <li>将网页嵌入到C#中做成软件</li>
+            <li>使C#能与服务器同步数据</li>
+            <li>将编写接口对各种语言开放</li>
+            <li>编写Android软件同步</li>
+            <li>编写iPhone软件同步</li>
+            <li>优化数据库，编写数据库语言，定时自动操作</li>
+            <li>进行分布式管理，实现分布计算</li>
+            <li>数据分布，完成数据整合</li>
+            <li>对数据进行数学分析，大数据研究</li>
+            <li>优化系统各个组件</li>
+            <li>编写笔记，记录重要的处理工程</li>
+          </ul>
+        </div>
+      </div>
 
     </div> <!-- /container -->
 
