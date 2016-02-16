@@ -1,0 +1,22 @@
+ul{
+	list-style: none;
+}
+ul li{
+	padding-bottom: 5px;
+}
+.div_all{
+ 	margin: 0 auto; 
+ 	width: 80%;
+}
+.div_left{
+	float:left; 
+	width: 49.5%; 
+	min-height: 580px; 
+	border: 1px solid green;
+}
+.div_right{
+	float:right;
+	width: 49.5%; 
+	min-height: 580px; 
+	border: 1px solid grey;
+}
