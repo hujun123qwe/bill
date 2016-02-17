@@ -8,7 +8,8 @@
     <meta name="author" content="hujun123qwe">
 
     <!-- Le styles -->
-    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+<!--     <link href="bootstrap/css/bootstrap.css" rel="stylesheet"> -->
+    <link href="bootstrap/css/bootstrap.new.css" rel="stylesheet">
     <style>
       body {
         padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
@@ -20,13 +21,6 @@
     <!--[if lt IE 9]>
       <script src="bootstrap/js/html5shiv.js"></script>
     <![endif]-->
-
-    <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="bootstrap/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="bootstrap/ico/apple-touch-icon-114-precomposed.png">
-      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="bootstrap/ico/apple-touch-icon-72-precomposed.png">
-                    <link rel="apple-touch-icon-precomposed" href="bootstrap/ico/apple-touch-icon-57-precomposed.png">
-                                   <link rel="shortcut icon" href="bootstrap/ico/favicon.png">
   </head>
 
   <body>
@@ -34,12 +28,7 @@
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="brand" href="#">我的记账统计网页版</a>
+          <a class="brand" href="index.html">我的记账统计网页版</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li class="active"><a href="index.html">录入记账</a></li>
@@ -53,8 +42,33 @@
 
     <div class="container">
 
-      <h1>Bootstrap starter template</h1>
-      <p>Use this document as a way to quick start any new project.<br> All you get is this message and a barebones HTML document.</p>
+      <h1>账目详细信息</h1>
+        <form>
+          <div class="panel panel-primary">
+            <div class="panel-header">
+              sm
+            </div>
+            <div class="panel-body">
+              <dl class="dl-horizontal">
+                <dt>花费时间：</dt>
+                <dd><input type="text"/></dd>
+                <dt>花费项目：</dt>
+                <dd></dd>
+                <dt>花费金额：</dt>
+                <dd></dd>
+                <dt>花费地点：</dt>
+                <dd></dd>
+                <dt></dt>
+                <dd></dd>
+                <dt></dt>
+                <dd></dd>
+              </dl>
+            </div>
+            <div class="panel-footer">
+                <input type="submit"/>
+            </div>
+          </div>
+        </form>
 
     </div> <!-- /container -->
 
