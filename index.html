@@ -41,7 +41,7 @@
     </div>
 
     <div class="container">
-        <form>
+        <form action="InsertItem.php" method="post">
           <div class="panel panel-primary">
             <div class="panel-heading">
               <span class="glyphicon glyphicon-list-alt" aria-hidden="true">账目详细信息
@@ -49,17 +49,17 @@
             <div class="panel-body">
               <dl class="dl-horizontal">
                 <dt>花费时间：</dt>
-                <dd><input type="text"/></dd>
+                <dd><input type="text" name="bill_time"/></dd>
                 <dt>花费项目：</dt>
-                <dd><input type="text"/></dd>
+                <dd><input type="text" name="bill_item"/></dd>
                 <dt>花费金额：</dt>
-                <dd><input type="text"/></dd>
+                <dd><input type="text" name="bill_money"/></dd>
                 <dt>花费地点：</dt>
-                <dd><input type="text"/></dd>
+                <dd><input type="text" name="bill_place"/></dd>
                 <dt>花费原因：</dt>
-                <dd><input type="text"/></dd>
+                <dd><input type="text" name="bill_reason"/></dd>
                 <dt>备注：</dt>
-                <dd><input type="text"/></dd>
+                <dd><input type="text" name="bill_other/"></dd>
               </dl>
             </div>
             <div class="panel-footer">
