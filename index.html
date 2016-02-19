@@ -9,7 +9,7 @@
 
     <!-- Le styles -->
 <!--     <link href="bootstrap/css/bootstrap.css" rel="stylesheet"> -->
-    <link href="bootstrap/css/bootstrap.new.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
     <style>
       body {
         padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
@@ -42,11 +42,26 @@
 
     <div class="container">
         <form action="InsertItem.php" method="post">
-          <div class="panel panel-primary">
+          <div class="panel panel-default">
             <div class="panel-heading">
-              <span class="glyphicon glyphicon-list-alt" aria-hidden="true">账目详细信息
+              <h3 class="panel-title"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> 账目详细信息</h3>
             </div>
             <div class="panel-body">
+              <div class="input-group">
+                <span class="input-group-addon" id="basic-addon1">@</span>
+                <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+              </div>
+
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2">
+                <span class="input-group-addon" id="basic-addon2">@example.com</span>
+              </div>
+
+              <div class="input-group">
+                <span class="input-group-addon">$</span>
+                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                <span class="input-group-addon">.00</span>
+              </div>
               <dl class="dl-horizontal">
                 <dt>花费时间：</dt>
                 <dd><input type="text" name="bill_time"/></dd>
