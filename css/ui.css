@@ -1,20 +1,4 @@
-.div_all{
- 	margin: 0 auto; 
- 	width: 80%;
-}
-.div_left{
-	float:left; 
-	width: 49.5%; 
-	min-height: 580px; 
-	border: 1px solid green;
-}
-.div_right{
-	float:right;
-	width: 49.5%; 
-	min-height: 580px; 
-	border: 1px solid grey;
-}
-.nav-collapse.collapse {
+.nav-collapse .collapse {
   height: auto;
   overflow: visible;
 }
@@ -59,7 +43,7 @@
 .navbar-static-top .container,
 .navbar-fixed-top .container,
 .navbar-fixed-bottom .container {
-  width: 940px;
+  width: 1165px;
 }
 
 .navbar-fixed-top {
@@ -98,6 +82,7 @@
 
 .navbar .nav > li {
   float: left;
+  line-height: 28px;
 }
 
 .navbar .nav > li > a {
@@ -305,9 +290,6 @@
   color: #ffffff;
 }
 
-.navbar-inverse .brand {
-  color: #999999;
-}
 
 .navbar-inverse .navbar-text {
   color: #999999;
