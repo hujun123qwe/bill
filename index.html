@@ -1,30 +1,21 @@
 <!DOCTYPE html>
-<html lang="zh-cn">
+<html lang="zh-CN">
   <head>
     <meta charset="utf-8">
     <title>Keeping Accounts</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="我的记账小网站，创建于2016年2月16日12:11:45">
     <meta name="author" content="hujun123qwe">
-
-    <!-- Le styles -->
-<!--     <link href="bootstrap/css/bootstrap.css" rel="stylesheet"> -->
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/ui.css">
     <style>
       body {
         padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
       }
     </style>
-    <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
-
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="bootstrap/js/html5shiv.js"></script>
-    <![endif]-->
   </head>
 
   <body>
-
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
@@ -44,24 +35,26 @@
         <form action="InsertItem.php" method="post">
           <div class="panel panel-default">
             <div class="panel-heading">
-              <h3 class="panel-title"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> 账目详细信息</h3>
+              <h3 class="panel-title">
+              <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> 账目详细信息</h3>
             </div>
             <div class="panel-body">
               <div class="input-group">
                 <span class="input-group-addon" id="basic-addon1">@</span>
                 <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
               </div>
-
+              <br>
               <div class="input-group">
                 <input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2">
                 <span class="input-group-addon" id="basic-addon2">@example.com</span>
               </div>
-
+              <br>
               <div class="input-group">
                 <span class="input-group-addon">$</span>
                 <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
                 <span class="input-group-addon">.00</span>
               </div>
+              <br>
               <dl class="dl-horizontal">
                 <dt>花费时间：</dt>
                 <dd><input type="text" name="bill_time"/></dd>
