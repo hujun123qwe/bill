@@ -30,7 +30,10 @@
     </div>
 
     <div class="container">
-        <form action="InsertItem.php" method="post">
+
+      <div class="row">
+        <div class="col-md-6">
+          <form action="InsertItem.php" method="post">
           <div class="panel panel-default">
             <div class="panel-heading">
               <h3 class="panel-title">
@@ -73,6 +76,36 @@
             </div>
           </div>
         </form>
+        </div>
+        <div class="col-md-6">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">
+                <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> 账目详细信息</h3>
+              </div>
+            <div class="panel-body">
+              <div class="input-group">
+                <span class="input-group-addon" id="basic-addon1">时间</span>
+                <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+              </div>
+              <br>
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2">
+                <span class="input-group-addon" id="basic-addon2">@example.com</span>
+              </div>
+              <br>
+              <div class="input-group">
+                <span class="input-group-addon">$</span>
+                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                <span class="input-group-addon">.00</span>
+              </div>
+              <br>
+            </div>
+            <div class="panel-footer">
+                <input type="submit"/>
+            </div>
+        </div>
+      </div>
 
     </div> <!-- /container -->
 
