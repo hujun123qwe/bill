@@ -8,8 +8,9 @@
 	$bill_place = isset($_POST['bill_place']) ? $_POST['bill_place'] : -1;
 
 	if($bill_item != -1){
-		echo "Got it!";
-		echo '<br>'.$bill_time.'<br>'.$bill_item.'<br>'.$bill_money.'<br>'.$bill_place.'<br>'.$bill_other;
+		include_once 'header.html';
+		// echo '<br>'.$bill_time.'<br>'.$bill_item.'<br>'.$bill_money.'<br>'.$bill_place.'<br>'.$bill_other;
+		echo '<div class="container">插入成功<br><a href="index.html">返回上一页</a></div>';
 	}else{
 		echo "输入为空";
 		echo "<a href='index.html'>返回</a>";
