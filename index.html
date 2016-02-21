@@ -21,7 +21,7 @@
         <div class="container">
           <a class="brand" href="index.html">我的记账统计网页版</a>
             <ul class="nav">
-              <li class="active"><a href="index.html">录入记账</a></li>
+              <li class="active"><a href="index.html">记账详细信息</a></li>
               <li><a href="statistic.html">历史记账统计</a></li>
               <li><a href="plan.html">网站建设计划</a></li>
             </ul>
@@ -37,42 +37,44 @@
           <div class="panel panel-default">
             <div class="panel-heading">
               <h3 class="panel-title">
-              <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> 账目详细信息</h3>
+              <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> 录入记账</h3>
             </div>
             <div class="panel-body">
               <div class="input-group">
-                <span class="input-group-addon" id="basic-addon1">@</span>
-                <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+                <span class="input-group-addon" id="basic-addon1">话费时间</span>
+                <input type="text" class="form-control" placeholder="2016-02-21 15:51:09" aria-describedby="basic-addon1" name="bill_time">
               </div>
               <br>
               <div class="input-group">
-                <input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2">
-                <span class="input-group-addon" id="basic-addon2">@example.com</span>
+              <span class="input-group-addon" id="basic-addon1">话费项目</span>
+                <input type="text" class="form-control" placeholder="买红米3" aria-describedby="basic-addon2" name="bill_item">
+                <span class="input-group-addon" id="basic-addon2">@</span>
               </div>
               <br>
               <div class="input-group">
-                <span class="input-group-addon">$</span>
-                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-                <span class="input-group-addon">.00</span>
+                <span class="input-group-addon">话费金钱</span>
+                <input type="text" class="form-control" placeholder="849" aria-label="Amount (to the nearest dollar)" name="bill_money">
+                <span class="input-group-addon">元</span>
               </div>
               <br>
-              <dl class="dl-horizontal">
-                <dt>花费时间：</dt>
-                <dd><input type="text" name="bill_time"/></dd>
-                <dt>花费项目：</dt>
-                <dd><input type="text" name="bill_item"/></dd>
-                <dt>花费金额：</dt>
-                <dd><input type="text" name="bill_money"/></dd>
-                <dt>花费地点：</dt>
-                <dd><input type="text" name="bill_place"/></dd>
-                <dt>花费原因：</dt>
-                <dd><input type="text" name="bill_reason"/></dd>
-                <dt>备注：</dt>
-                <dd><input type="text" name="bill_other/"></dd>
-              </dl>
+              <div class="input-group">
+                <span class="input-group-addon" id="basic-addon1">话费地点</span>
+                <input type="text" class="form-control" placeholder="小米官网" aria-describedby="basic-addon1" name="bill_place">
+              </div>
+              <br>
+              <div class="input-group">
+                <span class="input-group-addon" id="basic-addon1">原因</span>
+                <input type="text" class="form-control" placeholder="换手机" aria-describedby="basic-addon1" name="bill_reason">
+              </div>
+              <br>
+              <div class="input-group">
+                <span class="input-group-addon" id="basic-addon1">备注</span>
+                <input type="text" class="form-control" placeholder="抢到的" aria-describedby="basic-addon1" name="bill_other">
+              </div>
+              <br>            
             </div>
             <div class="panel-footer">
-                <input type="submit"/>
+                <input type="submit" value="确定" />
             </div>
           </div>
         </form>
@@ -81,7 +83,7 @@
             <div class="panel panel-default">
               <div class="panel-heading">
                 <h3 class="panel-title">
-                <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> 账目详细信息</h3>
+                <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> 查询记账</h3>
               </div>
             <div class="panel-body">
               <div class="input-group">
