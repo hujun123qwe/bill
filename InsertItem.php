@@ -9,17 +9,19 @@
 
 	if($bill_item != -1){
 		include_once 'header.html';
-		// echo '<br>'.$bill_time.'<br>'.$bill_item.'<br>'.$bill_money.'<br>'.$bill_place.'<br>'.$bill_other;
-		echo '<div class="container">插入成功<br><a href="index.html">返回上一页</a></div>';
+
+		$sql = "INSERT INTO bill_records (bill_time, bill_money, bill_item, bill_place, bill_other) values('$bill_time', '$bill_money', '$bill_item', '$bill_place', '$bill_other')";
+		$sqlTool = new SQLTool();
+		$res = $sqlTool->execute_dql($sql);
+		
+		if($res == 1){
+			echo '<div class="container">插入成功<br><a href="index.html">返回上一页</a></div>';
+		}
 	}else{
 		echo "输入为空";
 		echo "<a href='index.html'>返回</a>";
 	}
 	// $sql = "select cnword from words where enword='".$en_word."' limit 0,1";
-
-	// $sqlTool = new SQLTool();
-
-	// $res = $sqlTool->execute_dql($sql);
 
 	// if($row=mysql_fetch_row($res)){
 	// 	echo $en_word." : ".$row[0];
