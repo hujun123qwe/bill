@@ -87,18 +87,41 @@
                 <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> 查询记账</h3>
               </div>
             <div class="panel-body">
-              <ul class="nav nav-tabs">
-                <li role="presentation" class="active"><a href="#">时间</a>
+              <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#time" aria-controls="time" role="tab" data-toggle="tab">时间</a></li>
+                <li role="presentation"><a href="#place" aria-controls="place" role="tab" data-toggle="tab">地点</a></li>
+                <li role="presentation"><a href="#bill" aria-controls="bill" role="tab" data-toggle="tab">消费</a></li>
+              </ul>
+
+              <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="time">
+                  <br>
                   <form>
                     <div class="input-group">
                       <span class="input-group-addon" id="basic-addon1">time</span>
                       <input type="text" class="form-control" placeholder="请输入时间" aria-describedby="basic-addon1" name="bill_time">
                     </div>
                   </form>
-                </li>
-                <li role="presentation"><a href="#">地点</a></li>
-                <li role="presentation"><a href="#">消费</a></li>
-              </ul>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="place">
+                  <br>
+                  <form>
+                    <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1">place</span>
+                      <input type="text" class="form-control" placeholder="请输入地点" aria-describedby="basic-addon1" name="bill_time">
+                    </div>
+                  </form>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="bill">
+                  <br>
+                  <form>
+                    <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1">time</span>
+                      <input type="text" class="form-control" placeholder="请输入" aria-describedby="basic-addon1" name="bill_time">
+                    </div>
+                  </form>
+                </div>
+              </div>
             </div>
             <div class="panel-footer">
                 <input type="submit"/>
